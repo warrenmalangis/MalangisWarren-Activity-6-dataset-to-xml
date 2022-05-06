@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <!DOCTYPE HT_2013-2020 [
-
-	<!ELEMENT HT_2013-2020 (data-year, ori, pub-agency-name, agency-type-name,state-abbr, state-name, division, county-name, region-name,population-group-code)>
+	<!ELEMENT HT_2013-2020 (ht-data)>
+	<!ELEMENT ht-data (data-year, ori, pub-agency-name, agency-type-name,state-abbr, state-name, division, county-name, region-name,population-group-code)>
 	<!ELEMENT data-year (#PCDATA)>
 	<!ELEMENT ori (#PCDATA)>
 	<!ELEMENT pub-agency-name (#PCDATA)>
@@ -14,11 +14,12 @@
 	<!ELEMENT region-name (#PCDATA)>
 	<!ELEMENT population-group-code (#PCDATA)>
 
+	<!ATTLIST ht-data id CDATA #REQUIRED>
 ]>
 
 <HT_2013-2020>
 
-	<ht-data>
+	<ht-data id ="001">
 		<data-year> 2016 </data-year>
 		<ori> MO0480600 </ori>
 		<pub-agency-name> Independence </pub-agency-name>
@@ -31,7 +32,7 @@
 		<population-group-code> 2 </population-group-code>
 	</ht-data>
 
-	<ht-data>
+	<ht-data id ="002">
 		<data-year> 2016 </data-year>
 		<ori> TX2201200 </ori>
 		<pub-agency-name> Fort Worth </pub-agency-name>
@@ -44,7 +45,7 @@
 		<population-group-code> 1B </population-group-code>
 	</ht-data>
 
-	<ht-data>
+	<ht-data id ="003">
 		<data-year> 2016 </data-year>
 		<ori> TX2270100 </ori>
 		<pub-agency-name> Austin </pub-agency-name>
@@ -57,7 +58,7 @@
 		<population-group-code> 1B </population-group-code>
 	</ht-data>
 
-	<ht-data>
+	<ht-data id ="004">
 		<data-year> 2019 </data-year>
 		<ori> NV0020100 </ori>
 		<pub-agency-name> Las Vegas Metropolitan Police Department </pub-agency-name>
@@ -70,7 +71,7 @@
 		<population-group-code> 1A </population-group-code>
 	</ht-data>
 
-	<ht-data>
+	<ht-data id ="005">
 		<data-year> 2017 </data-year>
 		<ori> AZ0070500 </ori>
 		<pub-agency-name> Chandler </pub-agency-name>
@@ -83,7 +84,7 @@
 		<population-group-code> 2 </population-group-code>
 	</ht-data>
 
-	<ht-data>
+	<ht-data id ="006">
 		<data-year> 2018 </data-year>
 		<ori> ND0090200 </ori>
 		<pub-agency-name> Fargo </pub-agency-name>
@@ -96,7 +97,7 @@
 		<population-group-code> 2 </population-group-code>
 	</ht-data>
 
-	<ht-data>
+	<ht-data id ="007">
 		<data-year> 2020 </data-year>
 		<ori> GA0380100 </ori>
 		<pub-agency-name> Newnan </pub-agency-name>
@@ -109,7 +110,7 @@
 		<population-group-code> 4 </population-group-code>
 	</ht-data>
 
-	<ht-data>
+	<ht-data id ="008">
 		<data-year> 2020 </data-year>
 		<ori> GA0440200 </ori>
 		<pub-agency-name> DeKalb County Police Department </pub-agency-name>
@@ -122,7 +123,7 @@
 		<population-group-code> 9A </population-group-code>
 	</ht-data>
 
-	<ht-data>
+	<ht-data id ="009">
 		<data-year> 2017 </data-year>
 		<ori> AZ0071700 </ori>
 		<pub-agency-name> Mesa </pub-agency-name>
@@ -135,7 +136,7 @@
 		<population-group-code> 1C </population-group-code>
 	</ht-data>
 
-	<ht-data>
+	<ht-data id ="010">
 		<data-year> 2020 </data-year>
 		<ori> LA0260000 </ori>
 		<pub-agency-name> Jefferson </pub-agency-name>
